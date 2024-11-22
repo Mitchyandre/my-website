@@ -1,0 +1,86 @@
+/* Stacked Layout for About Page */
+main {
+    display: flex;
+    flex-direction: column;
+    gap: 20px; /* Space between stacked tiles */
+    padding: 20px;
+    background-color: #f4f4f4;
+}
+
+section {
+    position: relative;
+    background: #ffffff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin: 0 auto;
+    max-width: 800px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Alternate Section Styling */
+section:nth-child(even) {
+    margin-left: 40px;
+    margin-right: 10px;
+    transform: translateX(-20px);
+}
+
+section:nth-child(odd) {
+    margin-right: 40px;
+    margin-left: 10px;
+    transform: translateX(20px);
+}
+
+/* Hover Effect for Sections */
+section:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.15);
+}
+
+section h1,
+section h2 {
+    font-size: 2.2em;
+    margin-bottom: 10px;
+    color: #4caf50;
+}
+
+section p,
+section ul {
+    font-size: 1em;
+    color: #faef2d;
+    line-height: 1.6;
+    text-align: left;
+}
+p {
+    font-size: 1.0rem;
+    margin-bottom: 15px;
+    color: #555;
+}
+
+/* Hero Section Styling */
+.hero {
+    background: linear-gradient(to right, #331507, #4caf50);
+    color: #fff;
+    padding: 40px;
+    border: none;
+    border-radius: 8px;
+    text-align: center;
+    max-width: 100%;
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2);
+    margin: 0;
+}
+
+.hero h1 {
+    font-size: 2.5em;
+    margin: 0;
+}
+
+footer {
+    margin-top: 20px;
+    text-align: center;
+    padding: 20px;
+    background-color: #331507;
+    color: #fff;
+    font-size: 0.9em;
+}

@@ -1,0 +1,31 @@
+
+section h2 {
+    font-size: 2.2em;
+    margin-bottom: 10px;
+    color: #4caf50;
+}
+
+section p,
+section ul {
+    font-size: 1em;
+    color: #d6ce28;
+    line-height: 1.6;
+    text-align: left;
+}
+p {
+    font-size: 1.0rem;
+    margin-bottom: 15px;
+    color: #555;
+}
+
+
+ 
+
+footer {
+    margin-top: 20px;
+    text-align: center;
+    padding: 20px;
+    background-color: #331507;
+    color: #fff;
+    font-size: 0.9em;
+}
